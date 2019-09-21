@@ -1,16 +1,16 @@
 var tempFahr = prompt('Current temperature in Fahrenheit?');
-var eventType = prompt('What kind of eventType is it? Formal, Informal or Casual').toLocaleLowerCase();
-var result = 'Since it is ' + tempFahr + ' degrees and you are going to a ' + eventType + ' eventType, you should wear ';
+var eventType = prompt('What kind of event is it? formal, semi-formal or casual').toLocaleLowerCase();
+var result = 'Since it is ' + tempFahr + ' degrees and you are going to a ' + eventType + ' event, you should wear ';
 
 
 if (eventType === 'formal') {
     result += 'a suit';
-} else if (eventType === 'informal') {
+} else if (eventType === 'semi-formal') {
     result += 'a polo';
 } else if (eventType === 'casual') {
-    result += 'something comfy';
+    result += 'something comfy'
 }
-result += ' and ';
+result += ' and ';
 
 if (tempFahr < 54) {
     result += 'a coat';
